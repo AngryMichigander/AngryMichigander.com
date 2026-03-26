@@ -1,0 +1,33 @@
+module:
+  imports:
+    - path: github.com/jpanther/lynx
+title: The Angry Michigander
+enableEmoji: true
+disableKinds:
+  - taxonomy
+  - term
+params:
+  author:
+    name: The Angry Michigander
+    headline: Just a Michigander who has opinions
+    image: author.png
+    links:
+      - link:
+          href: 'https://cheatingchelsea.com'
+          text: Cheating Chelsea Smallwood
+          # icon: github
+      # - link:
+      #     href: styles/
+      #     text: All the link styles
+      #     target: _self
+      # - github: 'https://github.com/jpanther/lynx'
+      # - x: 'https://x.com/jpanther'
+      # - font-awesome:
+      #     href: 'https://fontawesome.com/'
+      #     text: FontAwesome
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
