@@ -1,0 +1,11 @@
+{
+  "network_name": "AngryMichigander Network",
+  "version": "0.1.0",
+  "sites": [
+    { "name": "AngryMichigander",  "url": "https://angrymichigander.com", "role": "hub" },
+    { "name": "AlligatorPelican",  "url": "https://alligatorpelican.com", "role": "member" },
+    { "name": "DinoKent",          "url": "https://dinokent.com",         "role": "member" },
+    { "name": "CheatingChelsea",   "url": "https://cheatingchelsea.com",  "role": "member" },
+    { "name": "OnlyPhiles",        "url": "https://onlyphiles.com",       "role": "member" }
+  ]
+}

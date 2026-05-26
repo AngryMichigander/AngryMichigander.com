@@ -12,22 +12,30 @@ params:
     headline: Just a Michigander who has opinions
     image: author.png
     links:
+      # Sister sites in the AngryMichigander Network (mirrors network.json order).
       - link:
-          href: 'https://cheatingchelsea.com'
-          text: Cheating Chelsea Smallwood
+          href: 'https://alligatorpelican.com'
+          text: AlligatorPelican
+          target: _blank
       - link:
           href: 'https://dinokent.com'
-          text: Kent "Dino Kent" Hovind
-          # icon: github
-      # - link:
-      #     href: styles/
-      #     text: All the link styles
-      #     target: _self
-      # - github: 'https://github.com/jpanther/lynx'
-      # - x: 'https://x.com/jpanther'
-      # - font-awesome:
-      #     href: 'https://fontawesome.com/'
-      #     text: FontAwesome
+          text: DinoKent
+          target: _blank
+      - link:
+          href: 'https://cheatingchelsea.com'
+          text: CheatingChelsea
+          target: _blank
+      - link:
+          href: 'https://onlyphiles.com'
+          text: OnlyPhiles
+          target: _blank
+      - link:
+          href: '/network/'
+          text: About The AngryMichigander Network
+          target: _self
+      # Personal/social links can go here later — GitHub, Mastodon, etc.
+      # - github: 'https://github.com/AngryMichigander'
+      # - x: 'https://x.com/...'
 markup:
   highlight:
     noClasses: false

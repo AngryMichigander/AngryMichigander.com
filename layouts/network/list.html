@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <article class="prose dark:prose-invert max-w-none py-10">
+    <h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
+    {{ with .Content }}{{ . }}{{ end }}
+    <ul class="mt-6 space-y-2">
+      {{ range .Site.Data.network.sites }}
+        <li>
+          <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ .url }}">{{ .name }}</a>
+          <span class="text-sm text-neutral-500 dark:text-neutral-400"> — {{ .role }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </article>
+{{ end }}
