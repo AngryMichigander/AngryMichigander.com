@@ -82,6 +82,20 @@ The submodule lives under `vendor/network-manifest`, which triggers Go's vendori
 mode. The repo's `Makefile` sets `GOFLAGS=-mod=mod` for that reason; if you invoke
 `hugo` directly, prefix it with `GOFLAGS=-mod=mod` (or `export` it in your shell).
 
+## Cloudflare Pages build command
+
+The CF Pages build command must be set in the dashboard to:
+
+```
+GOFLAGS=-mod=mod hugo --gc --minify
+```
+
+The `GOFLAGS=-mod=mod` prefix is required because the `vendor/network-manifest`
+submodule path collides with Go's vendoring mode (Hugo uses Go modules to resolve
+the lynx theme). Without this, the build fails with `go: inconsistent vendoring
+in /opt/buildhome/repo` errors. Locally, the `Makefile` bakes the same env var
+in via `make sync-network-data` + `make verify-footer-override`.
+
 ## Getting Help
 
 - See [docs/QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) for common tasks
