@@ -12,9 +12,26 @@ params:
     headline: Just a Michigander who has opinions
     image: author.png
     links:
+      # Sister sites in the AngryMichigander Network (mirrors network.json order).
+      - link:
+          href: 'https://alligatorpelican.com'
+          text: AlligatorPelican
+          target: _blank
+      - link:
+          href: 'https://dinokent.com'
+          text: DinoKent
+          target: _blank
+      - link:
+          href: 'https://cheatingchelsea.com'
+          text: CheatingChelsea
+          target: _blank
+      - link:
+          href: 'https://onlyphiles.com'
+          text: OnlyPhiles
+          target: _blank
       - link:
           href: '/network/'
-          text: The AngryMichigander Network
+          text: About The AngryMichigander Network
           target: _self
       # Personal/social links can go here later — GitHub, Mastodon, etc.
       # - github: 'https://github.com/AngryMichigander'
