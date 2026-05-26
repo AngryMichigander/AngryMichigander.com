@@ -2,11 +2,6 @@
 {{- $peers := where .Site.Data.network.sites "role" "member" -}}
 <div class="network-footer text-center mt-4">
   <p class="text-xs text-neutral-500 dark:text-neutral-400">
-    Part of the
-    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ $hub.url }}">{{ .Site.Data.network.network_name }}</a>
-    —
-    {{- range $i, $s := $peers -}}
-      {{ if $i }} · {{ end }}<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ $s.url }}">{{ $s.name }}</a>
-    {{- end }}
+    Part of the <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ $hub.url }}">{{ .Site.Data.network.network_name }}</a> &mdash; {{ range $i, $s := $peers }}{{ if $i }} &middot; {{ end }}<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ $s.url }}">{{ $s.name }}</a>{{ end }}
   </p>
 </div>
